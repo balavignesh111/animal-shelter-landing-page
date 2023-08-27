@@ -30,6 +30,10 @@ body{
   justify-content: space-between;
 }
 
+.read-more:hover{
+  color: #116dff;
+}
+
 /* logo box */
 .logo-box{
   width: 3.8rem;
@@ -40,6 +44,10 @@ img{
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.logo-link{
+  text-decoration: none;
 }
 
 /* device-box */
@@ -61,6 +69,22 @@ img{
 .vertical-line{
   color: #20303c;
   align-self: stretch;
+}
+
+.mobile-hover-img{
+  display: none;
+}
+
+.mobile-box,.desktop-box{
+  cursor: pointer;
+}
+
+.mobile-box:hover .mobile-img{
+  display: none;
+}
+
+.mobile-box:hover .mobile-hover-img{
+  display: inline;
 }
 
 /* sub-box-2 */
@@ -89,6 +113,10 @@ img{
   border-radius: 25px;
 }
 
+.edit-btn:hover{
+  opacity: 0.8;
+}
+
 .edit-description{
   font-size: 1rem;
   color: #20303C;
@@ -102,6 +130,48 @@ img{
 /* navigation bar */
 .navigation-bar{
   width: 100%;
-  height: 6rem;
+  height: 5.6rem;
   background-color: rgb(234,230,220);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* nav-logo */
+.nav-logo{
+  align-self: flex-start;
+  width: 10rem;
+  display: flex;
+}
+
+.cat-logo-box{
+  width: 5rem;
+}
+
+.logo-title{
+  color: rgb(225,83,60);
+  font-size: 1.4rem;
+  align-self: flex-end;
+}
+
+/* nav-menu-option */
+.nav-menu-option a{
+  color: rgb(225,83,60);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-menu-option{
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu-option .home-opt{
+  color: #494646;
+}
+
+.nav-menu-option a:hover{
+  color: #494646;
 }
