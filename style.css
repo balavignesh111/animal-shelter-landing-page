@@ -11,6 +11,11 @@ html{
 body{
   font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
   width: 100vw;
+  overflow-x: hidden;
+}
+
+.main-container{
+  overflow-y: scroll;
 }
 
 /* header part starts here!!! */
@@ -21,7 +26,7 @@ body{
   padding: 1.5rem 2.5rem;
   display: flex;
   box-shadow: 0px 0px 2px #8b8b8b;
-  position: relative;
+  position: fixed;
 }
 
 .sub-box-1{
@@ -136,6 +141,7 @@ img{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 4.5rem;
 }
 
 /* nav-logo */
@@ -174,4 +180,206 @@ img{
 
 .nav-menu-option a:hover{
   color: #494646;
+}
+
+/* save-pet-section */
+.save-pet-section{
+  width: 100%;
+  /* height: 80vh; */
+  background-color: white;
+  padding: 1rem 1rem 0rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* pet-image-container */
+.pet-image-container{
+  width: 37rem;
+}
+
+.donate-container{
+  width: 25rem;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* dotted border */
+.dotted-brd{
+  width: 94%;
+  height: 1rem;
+  border: 2px dotted rgb(225,83,60);
+  border-left: none;
+  border-right: none;
+}
+
+.pet-title{
+  font-family: 'Anton', sans-serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+
+.donate-now{
+  font-size: 3rem;
+}
+
+/* bottom box */
+.bottom-brd{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btm-box1,.btm-box3{
+  width: 30%;
+}
+
+.btm-box2{
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(225,83,60);
+  border: 1px solid rgb(225,83,60);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btm-box2 i{
+  color: white;
+  font-size: 3rem;
+}
+.btm-brd{
+  width: 100%;
+  height: 1rem;
+  border: 2px dotted rgb(225,83,60);
+  border-left: none;
+  border-right: none;
+}
+
+/* volunteer section starts here!! */
+.volunteer{
+  background-color: 
+  #e9e5db;
+  width: 100%;
+  padding: 1rem 10rem;
+}
+
+.volunteer-title{
+  color: rgb(225,83,60);
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* volunteer-box1 */
+.volunteer-box1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.volunteer-cnt-box{
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer-cnt{
+  font-size: 0.95rem;
+}
+
+.volunteer-list-img{
+  width: 10rem;
+}
+
+.volunteer-border{
+  align-self: stretch;
+  width: 1rem;
+  /* height: 10rem; */
+  border: none;
+  border-left: 2px dotted rgb(225,83,60);
+}
+
+/* week box style */
+.week-box{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.week-box1,.week-box2{
+  width: 100%;
+}
+
+.dog-img-box,.cat-img-box{
+  width: 20rem;
+}
+
+.week-dog,.week-cat{
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.week-box1,.week-box2{
+  display: flex;
+  gap: 3rem;
+}
+
+.dog-cnt{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.dog-title-star-img{
+  width: 1.2rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 0.2rem;
+}
+
+.dog-cnt-head-box{
+  position: relative;
+}
+
+.dog-cnt-title{
+  color: rgb(225,83,60);
+  margin-bottom: 1rem;
+}
+
+/* footer */
+.footer{
+  color: white;
+  background-color: rgb(225,83,60);
+  width: 100%;
+  height: 7rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.copyright a{
+  color: white;
+}
+
+.social-media{
+  width: 45rem;
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 1rem;
 }
